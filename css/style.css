@@ -1,0 +1,34 @@
+ul {
+    list-style: none;
+}
+
+.item {
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.item:nth-child(1) > .box {
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+}
+
+.item:nth-child(2) > .box {
+    background-color: blue;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 2;
+}
+
+.item:nth-child(3) > .box{
+    background-color: green;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    z-index: 1;
+}
